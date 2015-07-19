@@ -1,0 +1,43 @@
+settings =
+{
+        orientation =
+        {
+                default = "landscapeRight",
+				content = "landscapeRight",
+				supported =
+					{
+							"landscapeRight"
+					},
+        },
+		
+		
+		
+	
+		android =
+		{
+			googlePlayGamesAppId = "439657094733",
+			
+			usesPermissions =
+		   {
+              "android.permission.ACCESS_NETWORK_STATE",
+              "android.permission.RECEIVE_BOOT_COMPLETED",
+			  "android.permission.INTERNET",
+			  "com.android.vending.BILLING",
+			  "com.android.vending.CHECK_LICENSE",
+		   },
+		},
+		
+		plugins =
+		{
+			["CoronaProvider.gameNetwork.google"] =
+			{
+				publisherId = "com.coronalabs",
+			},
+			
+			["plugin.google.iap.v3"] =
+			{
+				publisherId = "com.coronalabs",
+				supportedPlatforms = { android=true }
+			},
+		}
+}
